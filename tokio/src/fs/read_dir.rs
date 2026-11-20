@@ -141,6 +141,7 @@ impl ReadDir {
                     target_os = "vxworks",
                     target_os = "aix",
                     target_os = "nto",
+                    target_os = "qnx",
                     target_os = "vita",
                 )))]
                 file_type: std.file_type().ok(),
@@ -205,6 +206,7 @@ pub struct DirEntry {
         target_os = "vxworks",
         target_os = "aix",
         target_os = "nto",
+        target_os = "qnx",
         target_os = "vita",
     )))]
     file_type: Option<FileType>,
@@ -339,6 +341,7 @@ impl DirEntry {
             target_os = "vxworks",
             target_os = "aix",
             target_os = "nto",
+            target_os = "qnx",
             target_os = "vita",
         )))]
         if let Some(file_type) = self.file_type {
